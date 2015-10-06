@@ -1,0 +1,27 @@
+GA Homework Notes
+
+use sudo-sector to grab the first letter
+--First Letter--
+.placeholder:first-letter{
+    font-size:25px;
+}
+
+p:first-letter{
+    font-size:25px;
+    color: teal;
+}
+
+-—hover--
+html
+<a href=‘#’>Article</a>
+
+css
+a:hover{
+	background: oragne;
+}
+
+
+
+- don’t use hr use border
+- about relaxor is its own aside
+- use normalize it seems like less of a pain
