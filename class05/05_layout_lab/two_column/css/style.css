@@ -52,5 +52,12 @@ footer {
 	height: 150px;
 	padding: 20px;
 
+}
 
+.semibold {
+  font-weight: 600;
+}
+
+.extrabold {
+  font-weight: 800;
 }
