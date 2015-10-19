@@ -1,3 +1,5 @@
+
+
 /*
 Project Name: Blank Template
 Client: Your Client
@@ -59,8 +61,12 @@ body {
 
 /* Center the container */
 #container {
-  width: 960px;
+  max-width: 100%;
   margin: auto;
+}
+
+header .monile-nav{
+  display: none;
 }
 
 header {
@@ -112,12 +118,9 @@ section {
 }
 
 footer {
-  background-color:#DDC2FA;  
-}
-
-.promos {
+  background-color:#DDC2FA;
   height: 200px;
-  padding: 2%;
+  padding: 2%;  
 }
 
 .promo {
@@ -132,10 +135,74 @@ footer {
   margin-right: 0;
 }
 
+*/
+
 /******************************************
-/* ADDITIONAL STYLES
+/* MOBILE STYLES
 /*******************************************/
 
+@media screen and (max-width: 1400px) and (min-width: 1025px){
+  body {
+    background-color: purple;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  body {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 767) and (min-width: 640px){
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 639px) and (min-width: 480px){
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  header ul {
+    display: none;
+  }
+
+  header .btn {
+    background-color: #FC6837;
+    float: right;
+    width: 10%;
+    text-transform: uppercase;
+    padding: 2%;
+    display: block;
+  }
+
+  .tout {
+    float: none;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+
+  .tout:last-child {
+    display: none;
+  }
+
+  .promo {
+    float: none;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+}
 
 
+@media screen and (max-width: 480px){
+  .tout {
+    display: none;
+  }
 
+  .tout:first-child {
+    display: block;
+  }
+}
