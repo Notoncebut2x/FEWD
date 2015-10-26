@@ -1,0 +1,9 @@
+For my final project I would like to work on improving the "Articles" page of the OSM Institutions website, OSM [Stories](http://osmstories.org/).
+
+For the redesign I would like to have it be similar to the [barebones template](http://skeleton.myshopify.com/) or Mike Bostock's [bl.ocks](http://bl.ocks.org/emeeks).
+
+Each aricle will get a "block" and display the title along with an image or location on the map of where that story takes place.  Further a search and filtering functionality based on the associated tags will be needed.
+
+Further the blocks should be dynamic in that they respond to a mouse over, rearrange when filtered and dynamically pull and parse content when added.
+
+Finally a redesign of those ugly colors is also imperative.
