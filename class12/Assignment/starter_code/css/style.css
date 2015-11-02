@@ -45,10 +45,6 @@ Developer @GA in NYC
 /* BASE STYLES
 /*******************************************/
 
-.nyc {
-  background-image: url(../images/sf.jpg)
-}
-
 body {
   color: #000;
   font-size: 12px;
@@ -141,6 +137,9 @@ header {
 }
 .sydney {
   background-image: url(../images/sydney.jpg)
+}
+.black {
+  background-color: black
 }
 
 /******************************************

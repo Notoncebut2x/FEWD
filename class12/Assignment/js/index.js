@@ -6,29 +6,25 @@
 
 $(document).ready(function(){
 
-	function cityPix(){
+	function init(){
+		$('form').submit(chooseCity);
+	}
+
+	function chooseCity(){
 		event.preventDefault();
 
 		var displayCity = $('#city-type').val();
 		console.log(displayCity);
 
-		if (displayCity === 'New York' || 'displayCity' === 'New York City' || 'displayCity' === 'NYC' ){
-			$(document.body).addClass(nyc);
-		} else if (displayCity === 'San Francisco' || 'displayCity' === 'SF' || 'displayCity' === 'Bay Area'){
-			$(document.body).addClass(sf);
-		} else if (displayCity === 'Los Angeles' || 'displayCity' === 'LA' || 'displayCity' === 'LAX'){
-			$(document.body).addClass(la);
+		if (displayCity === 'New York' || displayCity === 'New York City' || displayCity === 'NYC' ){
+			$('body').addClass('nyc');
+		} else if (displayCity === 'San Francisco' || displayCity === 'SF' || displayCity === 'Bay Area'){
+			$('body').addClass('sf');
+		} else if (displayCity === 'Los Angeles' || displayCity === 'LA' || displayCity === 'LAX'){
+			$('body').addClass('la');
 		} else {
-			$('body').text('black');
+			$('body').addClass('black');
 		}
-		console.log(cityPix);
-	}	
-
-	function changeCity(){
-		$('#submit-btn').click('cityPix');
 	}
-
-// console.log(displayCity.toString());
+	init();
 });
-
-

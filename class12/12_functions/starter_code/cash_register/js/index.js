@@ -13,7 +13,7 @@ $(document).ready(function(){
 		// total = total + entryNewNum;
 		total += entryNewNum;
 		totalCurrency = currencyFormat(total);
-		console.log('totalCurrency: '+ totalCurrency);
+			'totalCurrency: '+ totalCurrency);
 
 
 		$('#entries').append('<tr><td>'+ entryNewCurrency + '</td></tr>')
