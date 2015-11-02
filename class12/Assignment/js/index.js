@@ -22,9 +22,15 @@ $(document).ready(function(){
 			$('body').addClass('sf');
 		} else if (displayCity === 'Los Angeles' || displayCity === 'LA' || displayCity === 'LAX'){
 			$('body').addClass('la');
+		} else if (displayCity === 'Austin' || displayCity === 'ATX'){
+			$('body').addClass('austin');
+		} else if (displayCity === 'Sydney' || displayCity === 'SYD'){
+			$('body').addClass('sydney');
 		} else {
 			$('body').addClass('black');
 		}
 	}
+
 	init();
 });
+
