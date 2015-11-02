@@ -7,25 +7,28 @@
 $(document).ready(function(){
 
 	function cityPix(){
+		event.preventDefault();
 
 		var displayCity = $('#city-type').val();
 		console.log(displayCity);
 
 		if (displayCity === 'New York' || 'displayCity' === 'New York City' || 'displayCity' === 'NYC' ){
-			$('background').text('url(../solution_code/images/nyc.jpg)');
+			$(document.body).addClass(nyc);
 		} else if (displayCity === 'San Francisco' || 'displayCity' === 'SF' || 'displayCity' === 'Bay Area'){
-			$('background').text('url(../solution_code/images/sf.jpg)');
+			$(document.body).addClass(sf);
 		} else if (displayCity === 'Los Angeles' || 'displayCity' === 'LA' || 'displayCity' === 'LAX'){
-			$('background').text('url(../solution_code/images/la.jpg)');
+			$(document.body).addClass(la);
 		} else {
-			$('background').text('black)');
+			$('body').text('black');
 		}
+		console.log(cityPix);
 	}	
+
 	function changeCity(){
 		$('#submit-btn').click('cityPix');
 	}
 
-//	console.log(displayCity.toString());
+// console.log(displayCity.toString());
 });
 
 
